@@ -146,7 +146,19 @@ export default function Index() {
             <span className="text-white/40 text-xs block">мессенджер ✨</span>
           </div>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
+          <a
+            href="https://play.google.com/store/search?q=<query>&c=apps"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-2 rounded-xl text-white text-sm font-semibold shadow-lg transition-all hover:scale-105 hover:brightness-110"
+            style={{ background: "linear-gradient(135deg, #01875f, #00c853)" }}
+          >
+            <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.18 23.76a2 2 0 0 0 2.07-.19l11.07-6.4-2.93-2.93-10.21 9.52zM20.7 9.36l-2.77-1.6-3.14 3.13 3.14 3.14 2.8-1.62a2.01 2.01 0 0 0 0-3.05zM3 .26C2.65.45 2.4.83 2.4 1.32v21.36c0 .49.25.87.6 1.06l11.82-11.82L3 .26zm9.31 11.1L3.18.24 14.25 6.64l-2.94 2.94v1.54l2.94 2.94L3.18 19.76 12.31 11.36z"/>
+            </svg>
+            <span className="hidden sm:inline">Google Play</span>
+          </a>
           <Button variant="ghost" size="sm" className="w-9 h-9 p-0 text-white/60 hover:text-white hover:bg-white/10 rounded-xl">
             <Moon className="w-4 h-4" />
           </Button>
